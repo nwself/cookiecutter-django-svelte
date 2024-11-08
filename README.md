@@ -39,6 +39,13 @@ production-ready Django projects quickly.
 - Customizable PostgreSQL version
 - Default integration with [pre-commit](https://github.com/pre-commit/pre-commit) for identifying simple issues before submission to code review
 
+## Changes from standard cookiecutter-django
+- Read from .env file by default
+- Don't commit local .env to by default
+- Add django-invitations integration, site is invite-only and closed for registration by default
+    - Change `DJANGO_ACCOUNT_ALLOW_REGISTRATION` and `INVITATIONS_INVITATION_ONLY` in the .env to change this
+
+
 ## Optional Integrations
 
 _These features can be enabled during initial project setup._

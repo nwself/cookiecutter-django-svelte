@@ -9,10 +9,12 @@ keywords = [
   "project template",
   "scaffolding",
   "skeleton",
+  "svelte",
+  "tailwind",
 ]
 license = { text = "BSD" }
 authors = [
-  { name = "Daniel Roy Greenfeld", email = "pydanny@gmail.com" },
+  { name = "Nathan Self", email = "nwself@vt.edu" },
 ]
 requires-python = ">=3.12,<3.13"
 classifiers = [

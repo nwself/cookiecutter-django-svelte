@@ -27,6 +27,7 @@ urlpatterns = [
     # User management
     path("users/", include("{{ cookiecutter.project_slug }}.users.urls", namespace="users")),
     path("accounts/", include("allauth.urls")),
+    path("invitations/", include('invitations.urls', namespace='invitations')),
     # Your stuff: custom urls includes go here
     # ...
     # Media files

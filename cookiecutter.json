@@ -2,7 +2,7 @@
   "project_name": "My Awesome Project",
   "project_slug": "{{ cookiecutter.project_name.lower()|replace(' ', '_')|replace('-', '_')|replace('.', '_')|trim() }}",
   "description": "Behold My Awesome Project!",
-  "author_name": "Daniel Roy Greenfeld",
+  "author_name": "Nathan Self",
   "domain_name": "example.com",
   "email": "{{ cookiecutter.author_name.lower() | trim() |replace(' ', '-') }}@{{ cookiecutter.domain_name.lower() | trim() }}",
   "version": "0.1.0",
@@ -14,13 +14,14 @@
     "Not open source"
   ],
   "username_type": ["username", "email"],
-  "timezone": "UTC",
+  "timezone": "America/New_York",
   "windows": "n",
   "editor": ["None", "PyCharm", "VS Code"],
   "use_docker": "n",
   "postgresql_version": ["16", "15", "14", "13", "12"],
-  "cloud_provider": ["AWS", "GCP", "Azure", "None"],
+  "cloud_provider": ["None", "AWS", "GCP", "Azure"],
   "mail_service": [
+    "Other SMTP",
     "Mailgun",
     "Amazon SES",
     "Mailjet",
@@ -28,8 +29,7 @@
     "Postmark",
     "Sendgrid",
     "Brevo",
-    "SparkPost",
-    "Other SMTP"
+    "SparkPost"
   ],
   "use_async": "n",
   "use_drf": "n",
@@ -37,9 +37,9 @@
   "use_celery": "n",
   "use_mailpit": "n",
   "use_sentry": "n",
-  "use_whitenoise": "n",
+  "use_whitenoise": "y",
   "use_heroku": "n",
   "ci_tool": ["None", "Travis", "Gitlab", "Github", "Drone"],
-  "keep_local_envs_in_vcs": "y",
+  "keep_local_envs_in_vcs": "n",
   "debug": "n"
 }
